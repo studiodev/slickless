@@ -1,11 +1,13 @@
 name         := "slickless"
-organization := "io.underscore"
+organization := "io.tabmo"
 version      := "0.3.1"
 scalaVersion := "2.12.1"
 
 crossScalaVersions := Seq("2.11.8", "2.12.1")
 
 licenses += ("Apache-2.0", url("http://apache.org/licenses/LICENSE-2.0"))
+
+bintrayOrganization in ThisBuild := Some("tabmo")
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -30,9 +32,9 @@ libraryDependencies ++= Seq(
 pomExtra in Global := {
   <url>https://github.com/underscoreio/slickless</url>
   <scm>
-    <connection>scm:git:github.com/underscoreio/slickless</connection>
-    <developerConnection>scm:git:git@github.com:underscoreio/slickless</developerConnection>
-    <url>github.com/underscoreio/slickless</url>
+    <connection>scm:git:github.com/studiodev/slickless</connection>
+    <developerConnection>scm:git:git@github.com:studiodev/slickless</developerConnection>
+    <url>github.com/studiodev/slickless</url>
   </scm>
   <developers>
     <developer>
@@ -49,6 +51,11 @@ pomExtra in Global := {
       <id>milessabin</id>
       <name>Miles Sabin</name>
       <url>http://twitter.com/milessabin</url>
+    </developer>
+    <developer>
+      <id>julienlafont</id>
+      <name>Julien lafont</name>
+      <url>http://twitter.com/julien_lafont</url>
     </developer>
   </developers>
 }
